@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_primary">#4CAF50</color>
+    <color name="main_accent_dark">#1B5E20</color>
+    <color name="main_accent_light">#66BB6A</color>
+    <color name="primary_red">#EF5350</color>
+
+    <color name="gray_bg">#EFEFEF</color>
+    <color name="dark_gray">#2E313A</color>
+    <color name="owe_button_bg">#EFEFEF</color>
+    <color name="sub_gray">#7F7F7F</color>
+    <color name="price_green">#47B657</color>
+    <color name="card_shadow">#E5E5E5</color>
+</resources>

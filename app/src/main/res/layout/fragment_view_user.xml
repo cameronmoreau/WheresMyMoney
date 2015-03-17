@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_header_all"
+            android:background="@color/main_accent_light"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="@dimen/list_item_padding"
+            android:paddingBottom="@dimen/list_item_padding"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@android:color/white"
+                android:textSize="28sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_user_image"
+                android:src="@drawable/ic_launcher"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/action_text_user"
+                style="@style/ContactButton"
+                android:id="@+id/button_text" />
+
+            <View
+                android:id="@+id/v_phone"
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/main_accent_light" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/action_call_user"
+                style="@style/ContactButton"
+                android:id="@+id/button_call" />
+
+            <View
+                android:id="@+id/v_email"
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/main_accent_light" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/action_email_user"
+                style="@style/ContactButton"
+                android:id="@+id/button_email" />
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lv_contact"
+            android:divider="@null"
+            android:dividerHeight="0dp" />
+    </LinearLayout>
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/fab_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        fab:fab_addButtonColorNormal="@android:color/holo_red_light"
+        fab:fab_addButtonColorPressed="@android:color/holo_blue_bright"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_add_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_icon="@drawable/ic_action_search"
+                fab:fab_colorNormal="@android:color/holo_orange_dark"
+                fab:fab_colorPressed="@android:color/holo_orange_light" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_add_new_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_icon="@drawable/ic_action_person_add"
+                fab:fab_colorNormal="@android:color/holo_green_dark"
+                fab:fab_colorPressed="@android:color/holo_green_light"/>
+
+        </LinearLayout>
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+</FrameLayout>

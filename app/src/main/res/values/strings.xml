@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WheresMyMoney</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_done">Done</string>
+    <string name="action_discard">Discard</string>
+    <string name="action_payedoff_full">Payed-Off Fully</string>
+    <string name="action_payedoff_part">Payed-Off Partially</string>
+    <string name="action_all_users">View Users</string>
+    <string name="action_call_user">Call</string>
+    <string name="action_text_user">Text</string>
+    <string name="action_email_user">Email</string>
+
+    <string-array name="saved_colors">
+        <item>#33B5E5</item>
+        <item>#AA66CC</item>
+        <item>#99CC00</item>
+        <item>#FFBB33</item>
+        <item>#FF4444</item>
+    </string-array>
+
+</resources>

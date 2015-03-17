@@ -1,0 +1,59 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    tools:context=".MainActivity$SummaryListFragment">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/list_height"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="@dimen/list_height"
+            android:id="@+id/lv_owed" />
+
+    </LinearLayout>
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/fab_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        fab:fab_addButtonColorNormal="@android:color/holo_blue_light"
+        fab:fab_addButtonColorPressed="@android:color/holo_blue_bright"
+        fab:fab_addButtonPlusIconColor="@android:color/white"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_add_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_icon="@drawable/ic_action_search"
+                fab:fab_colorNormal="@android:color/holo_orange_dark"
+                fab:fab_colorPressed="@android:color/holo_orange_light" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_add_new_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_icon="@drawable/ic_action_person_add"
+                fab:fab_colorNormal="@android:color/holo_green_dark"
+                fab:fab_colorPressed="@android:color/holo_green_light"/>
+
+        </LinearLayout>
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+</FrameLayout>

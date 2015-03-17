@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_shadow"
+        android:id="@+id/layout_summary_row"
+        android:padding="@dimen/list_item_padding"
+        android:layout_gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageview_summary_contact"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:textSize="22sp"
+                android:id="@+id/tv_summary_firstname"
+                android:textColor="@color/dark_gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/tv_summary_lastname"
+                android:textColor="@color/sub_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:textSize="22sp"
+                android:textColor="@color/price_green"
+                android:id="@+id/tv_summary_owed" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:textColor="@color/sub_gray"
+                android:id="@+id/tv_summary_date" />
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imagebutton_summary_overflow"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_action_navigation_dark"
+            android:paddingLeft="@dimen/list_item_padding"/>
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/action_payed_off_full"
+        android:title="@string/action_payedoff_full"
+        android:orderInCategory="100" />
+
+    <item android:id="@+id/action_payed_off_part"
+        android:title="@string/action_payedoff_part"
+        android:orderInCategory="100" />
+
+</menu>
